@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@1,200&display=swap');
+
+
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background-image: url('http://imagenesgamers.canalrcn.com/ImgTodoGamers/spotify-lyrics_0.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:center ;
+  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+
+}
+
+header::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color;
+    background: blueviolet;
+    opacity: 0.8;
+    
+    
+    
+}
+
+header * {
+    z-index: 10;
+}
+
+input{
+    outline: none;
+    box-shadow: 1px 1px 1px white;
+}
+
+input::focus {
+    outline: none;
+}
+header h1 {
+    margin: 20px;
+    letter-spacing: 15px;
+    font-weight: bold;
+}
+
+form{
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    border: 0;
+    width: 100%;
+    background:white;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+button {
+    width: 100px;
+    border-radius: 30px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.resultados {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+.resultados ul {
+    width: 100%;
+}
+
+.resultados ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
+.resultados ul li p {
+    width: 50%;
+    max-width: 50%;
+}
+
+audio {
+    height: 30px;
+    max-width: 50%;
+}
+
+.masResultados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 280px;
+    height: 25px;
+    
+}
+
